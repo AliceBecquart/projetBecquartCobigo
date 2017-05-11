@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<link rel="stylesheet" href="css/main.css" type="text/css">
+<link rel="stylesheet" href="css/utilisateur.css" type="text/css">
+
+
+   <head>
+      <meta charset="utf-8">
+      <title>Intranet COBIGO</title>
+   </head>
+
+   <body>
+      <header id="header" th:insert="~{headerVU :: menuVU}"></header>
+	  <div id="navigation" th:insert="~{headerVU :: menuVU('demandeCongeVU')}"></div>
+
+		<div class="flash">
+
+			<h2>Demander un congé</h2>
+
+         <div id="conteneur">
+			
+         <div class="element">
+				<p> Liste des congés disponibles </p>
+				<a href="/DisponibilitesNA"></a>
+				
+			</div>
+
+			<div class="element">
+
+			<table class="FormDemande">
+				<tr>
+               		<td>
+               			<label for="DateDebut">
+               				<strong>Date du début :</strong>
+               			</label>
+               		</td>
+               		<td>
+               			<input type="date" name="DateDebut" id="DateDebut" value=""/>
+               		</td>   
+         
+               		<td>
+               			<label for="HeureDebut"><strong>Heure de début :</strong></label>
+               		</td>
+               		<td>
+               			<input type="time" name="HeureDebut" id="HeureDebut" value=""/>
+               		</td>
+            	</tr>
+
+            	<tr>
+               		<td>
+               			<label for="DateFin">
+               				<strong>Date de fin :</strong>
+               			</label>
+               		</td>
+               		<td>
+               			<input type="date" name="DateFin" id="DateFin" value=""/>
+               		</td>   
+
+               		<td>
+               			<label for="HeureFin"><strong>Heure de fin :</strong></label>
+               		</td>
+               		<td>
+               			<input type="time" name="HeureFin" id="HeureFin" value=""/>
+               		</td>
+            	</tr>
+
+            	<tr>
+               		<td>
+               			<label for="TypeCongé">
+               				<strong>Choix du type de congé : </strong>
+               			</label>
+               		</td>
+               		<td>
+               			<select name="TypeCongé" id="TypeCongé">
+               				<option value="Congé Paternité"> <strong>Congé Paternité/Maternité</strong></option>
+               				<option value="Congé A">Congé A</option>
+               				<option value="Congé A">Congé A</option>
+               				<option value="Congé A">Congé A</option>
+               				<option value="Congé A">Congé A</option>
+               			</select>
+               		</td>   
+            	</tr>
+
+            	<tr>
+            		<td>
+            			<label for="Commentaire"> <strong>Ajouter un commentaire</strong></label>
+            		</td>
+            		<td>
+            			<textarea name="Commentaire" id="Commentaire" rows="5">Facultatif</textarea>
+            		</td>
+            	</tr>
+
+            </table>
+
+            	<input class="envoyer" type="submit" name="connexion" value="Envoyer"/>
+
+            </div>
+			</div>
+
+		</div>
+
+	</body>
+
+</html>

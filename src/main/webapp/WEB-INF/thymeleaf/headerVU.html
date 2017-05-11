@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<link rel='stylesheet' href='css/fullcalendar.css'/> 
+
+    	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+		<title>Intranet COBIGO</title>
+	</head>
+
+	<body>
+		<header id="header" th:fragment="teteVU">
+			<div class="element"><h1>Bonjour,</h1></div>
+			<div class="element"><img src="images/LogoCOBIGO.jpg"></div>
+		</header>
+
+		<div id="navigation" th:fragment="menuVU(selectionMenu)">
+			<div class="element">
+				<h3>Mon Profil</h3>
+				<a th:class="${selectionMenu == 'profilVU'} ? 'active'" href="profilVU"><img src="images/IconeProfil.png"></a>
+			</div>
+
+			<div class="element">
+				<h3>Demander un congé</h3>
+				<a th:class="${selectionMenu == 'demandeCongeVU'} ? 'active'" href="demandeCongeVU"><img src="images/IconeDemande.png"></a>
+			</div>
+
+			<div class="element">
+				<h3>Mes réservations</h3>
+				<a th:class="${selectionMenu == 'reservationVU'} ? 'active'" href="reservationVU"><img src="images/IconeReservation.png"></a>
+			</div>
+		</div>
+	</body>
+</html>

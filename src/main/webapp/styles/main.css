@@ -1,0 +1,58 @@
+
+@import url('https://fonts.googleapis.com/css?family=Dosis|Lobster+Two');
+
+body{	
+	background-image: url("../images/ParcCOBIGO.jpg");
+	background-repeat: no-repeat;
+	text-align: center;
+    background-size: cover;
+	font-family: "Dosis",sans-serif;
+ 
+
+}
+
+#header 
+{
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+
+#header h1{
+	text-align: center;
+}
+
+h2{
+	font-family: 'Lobster Two', cursive;
+}
+
+#header img{
+	width: 30%;
+	float:right;
+
+}
+
+.accueil {
+	background-color: white;
+	width: 60%;
+	margin: auto;
+	margin-top: 200px;
+	padding: 15px;
+	border-radius: 5px;
+
+}
+
+#connexion img{
+	width: 10%;
+}
+
+#navigation {
+	display: flex;
+    justify-content: space-around;
+    background-color: white;
+
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<link rel="stylesheet" href="css/main.css" type="text/css">
+<link rel="stylesheet" href="css/utilisateur.css" type="text/css">
+
+
+   <head>
+      <meta charset="utf-8">
+      <title>Intranet COBIGO</title>
+   </head>
+
+   <body>
+      <header id="header" th:insert="~{headerVU :: menuVU}"></header>
+		<div id="navigation" th:insert="~{headerVU :: menuVU('reservationVU')}"></div>
+
+		<div class="flash">
+			<h2> Voici votre historique de demandes de congés : </h2>
+			<table class="demande">
+				<thead>
+					<td><b>Congé</b></td>
+					<td><b>Date</b></td>
+					<td><b>Etat de la demande</b></td>
+				</thead>
+				
+				<tbody>
+					<td>Congé1</td>
+					<td>DateC1</td>
+					<td>EtatC1</td>
+				</tbody>
+			</table>
+
+		</div>
+
+	</body>
+
+</html>

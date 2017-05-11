@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html>
+<link rel="stylesheet" href="styles/main.css" type="text/css">
+<link rel="stylesheet" href="styles/utilisateur.css" type="text/css">
+
+	<head>
+    	<link rel="icon" type="image/png" href="images/petitlogo.png" />
+		<meta charset="utf-8">
+		<title>Intranet COBIGO</title>
+	</head>
+
+	<body>
+		<header id="header">
+			<div class="element"><h1>Bonjour Pierre</h1></div>
+			<div class="element"><img src="images/LogoCOBIGO.jpg"></div>
+		</header>
+
+
+		<div id="navigation">
+			<div class="element">
+				<h3>Planning</h3>
+				<a href="accueilVA"><img src="images/IconeDemande.png"></a>
+			</div>
+
+			<div class="element">
+				<h3>Demandes en attente</h3>
+				<a href="congeAttente"><img src="images/IconeAttente.png"></a>
+
+			</div>
+
+			<div class="element">
+				<h3>Demandes traitées</h3>
+				<a href="listeConge"><img src="images/IconeReservation.png"></a>
+			</div>
+		</div>
+
+
+
+		<div class="flash">
+			<h2> Voici les demandes traitées : </h2>
+			<table class="demande">
+				<thead>
+					<td><b>Employé</b></td>
+					<td><b>Congé</b></td>
+					<td><b>Date</b></td>
+					<td><b>Etat</b></td>
+				</thead>
+				
+				<tbody>
+					<td>Pierre Dupont</td>
+					<td>RTT</td>
+					<td>15/05/2017 - 16/05/2017</td>
+					<td>
+						Refusée
+					</td>
+					<td>
+						<a href=#>Supprimer</a> 
+					</td>
+				</tbody>
+			</table>
+		</div>
+
+	</body>
+
+</html>

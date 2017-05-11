@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<link rel='stylesheet' href='css/fullcalendar.css'/> 
+		
+		<title>Intranet COBIGO</title>
+	</head>
+
+	<body>
+		<header id="header" th:fragment="teteVA">
+			<div class="element"><h1>Bonjour,</h1></div>
+			<div class="element"><img src="images/LogoCOBIGO.jpg"></div>
+		</header>
+
+		<div id="navigation" th:fragment="menuVA">
+			<div class="element">
+				<h3>Planning</h3>
+				<a th:class="${selectionMenu == 'planningVA'} ? 'active'" href="planningVA"><img src="images/IconeDemande.png"></a>
+			</div>
+
+			<div class="element">
+				<h3>Demandes en attente</h3>
+				<a th:class="${selectionMenu == 'demandeAttenteVA'} ? 'active'"href="demandeAttenteVA"><img src="images/IconeAttente.png"></a>
+
+			</div>
+
+			<div class="element">
+				<h3>Demandes traitées</h3>
+				<a th:class="${selectionMenu == 'demandeTraiteVA'} ? 'active'" href="demandeTraiteVA"><img src="images/IconeReservation.png"></a>
+			</div>
+		</div>
+	</body>
+</html>

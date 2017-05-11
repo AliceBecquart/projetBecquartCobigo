@@ -1,0 +1,114 @@
+.red {
+    background: #dd3333 !important;
+
+}
+
+.red-text {
+    color: #dd3333 !important;
+}
+
+.blue {
+    background: #1F8585 !important;
+
+}
+
+.blue-text {
+    color: #1F8585 !important;
+}
+
+input:not([type]):focus:not([readonly]), input[type=text]:focus:not([readonly]), input[type=password]:focus:not([readonly]), input[type=email]:focus:not([readonly]), input[type=url]:focus:not([readonly]), input[type=time]:focus:not([readonly]), input[type=date]:focus:not([readonly]), input[type=datetime-local]:focus:not([readonly]), input[type=tel]:focus:not([readonly]), input[type=number]:focus:not([readonly]), input[type=search]:focus:not([readonly]), textarea.materialize-textarea:focus:not([readonly]) {
+    border-bottom: 1px solid #1F8585;
+    box-shadow: 0 1px 0 0 #1F8585;
+}
+
+[type="checkbox"]:checked + label:before {
+    border-right: 2px solid #1F8585;
+    border-bottom: 2px solid #1F8585;
+}
+
+.dropdown-content li > a, .dropdown-content li > span {
+    color: #1F8585;
+}
+
+.card.header {
+    margin: 0;
+}
+
+.card.header .card-image {
+    max-height: 100%;
+}
+
+.card.header .card-image img {
+    min-height: 300px;
+}
+
+.card.header .card-title {
+    width: 100%;
+    text-align: center;
+    bottom: 30px;
+}
+
+.card.header .card-title h1 {
+    font-size: 6rem;
+    margin-bottom: 0;
+}
+
+.card.header .card-title h5 {
+    margin-top: 0;
+    font-weight: 300;
+}
+
+@media only screen and (max-width: 600px) {
+    .card.header.small {
+        height: 200px !important;
+    }
+}
+
+.modal.modal-fixed-footer{
+    max-height: 50%;
+    height: 50%;
+}
+
+.fc-event {
+    border:#1F8585;
+    background-color: #1F8585;
+
+}
+
+
+
+a a.fc-event {
+    cursor: pointer;
+}
+
+form .erreur {
+    color: #dd3333;
+}
+
+.maj:first-letter {
+    text-transform:capitalize;
+}
+
+.side-nav a{
+    padding: 0 30px;
+}
+
+.side-nav li{
+    padding: 0px;
+}
+
+ul li a {
+    padding: 0 16px;
+}
+menu {
+    padding-top: 200px;
+}
+
+a {
+    cursor: pointer;
+}
+
+.fixed-action-btn.horizontal.click-to-toggle{
+    bottom: 0px;
+    right: 5px;
+}

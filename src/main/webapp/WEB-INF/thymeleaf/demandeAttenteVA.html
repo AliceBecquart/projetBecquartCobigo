@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html>
+<link rel="stylesheet" href="css/main.css" type="text/css">
+<link rel="stylesheet" href="css/utilisateur.css" type="text/css">
+
+	<head>
+		<meta charset="utf-8">
+		<title>Intranet COBIGO</title>
+	</head>
+
+	<body>
+		<header id="header" th:insert="~{headerVA :: teteVA}"> </header>
+		<div id="navigation" th:insert="~{headerVA :: menuVA('demandeAttenteVA')}"> </div>
+
+		<div class="flash">
+			<h2> Voici les demandes en attente : </h2>
+			<table class="demande">
+				<thead>
+					<td><b>Employé </b></td>
+					<td><b>Congé </b></td>
+					<td><b>Date</b></td>
+					<td><b>Action</b></td>
+				</thead>
+				
+				<tbody>
+					<td>${employe.nomEmploye} ${employe.prenomEmpoye}</td>
+					<td>${typeConge.libelleTypeConge}</td>
+					<td>${conge.dateDebutConge} ${conge.dateFinConge}</td>
+					<td>
+						<a href=#>Valider</a> / <a href=#>Refuser</a>
+					</td>
+				</tbody>
+			</table>
+		</div>
+
+	</body>
+
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html>
+<link rel="stylesheet" href="css/main.css" type="text/css">
+<link rel="stylesheet" href="css/utilisateur.css" type="text/css">
+
+	<head>
+		<meta charset="utf-8">
+		<title>Intranet COBIGO</title>
+	</head>
+
+	<body>
+		<header id="header" th:insert="~{headerVA :: teteVA}"> </header>
+		<div id="navigation" th:insert="~{headerVA :: menuVA('demandeTraiteVA')}"> </div>
+
+
+		<div class="flash">
+			<h2> Voici les demandes traitées : </h2>
+			<table class="demande">
+				<thead>
+					<td><b>Employé</b></td>
+					<td><b>Congé</b></td>
+					<td><b>Date</b></td>
+					<td><b>Etat</b></td>
+				</thead>
+				
+				<tbody>
+					<td>Nom Prénom</td>
+					<td>TypeCongé1</td>
+					<td>DateC1</td>
+					<td>
+						Refusée
+					</td>
+				</tbody>
+			</table>
+		</div>
+
+	</body>
+
+</html>

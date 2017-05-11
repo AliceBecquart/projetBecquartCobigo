@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<link rel="stylesheet" href="css/main.css" type="text/css">
+<link rel="stylesheet" href="css/utilisateur.css" type="text/css">
+
+
+	<head>
+		<meta charset="utf-8">
+		<title>Intranet COBIGO</title>
+	</head>
+
+	<body>
+		<header id="header" th:insert="~{headerVU :: menuVU}"></header>
+		<div id="navigation" th:insert="~{headerVU :: menuVU('profilVU')}"></div>
+
+		<div class="flash">
+			<h2>${employe.nomEmpoye} ${employe.prenomEmploye}</h2>
+			<p>Né le ${employe.dateNaissanceEmploye}</p>
+			<p>${employe.telephoneEmploye}</p>
+			<p>${employe.mailEmploye}</p>
+
+			<br/><br/>
+
+			    <p><i>Pour modifier vos informations, veuillez contacter : <b>cobigo@cobigo.com</b></i></p>
+			
+			<br/><br/><br/><br/><br/><br/><br/><br/>
+
+		</div>
+
+	</body>
+
+</html>
